@@ -15,7 +15,7 @@ Here's the full sequence of commands you might run in a terminal:
 2. git fetch repo1
 3. mkdir PROJECT_NAME
 4. git read-tree --prefix=PROJECT_NAME/ -u repo1/main
-5. git commit -m "Add Azure-Auth-NodeJS as a subdirectory and named it PROJECT_NAME"
+5. git commit -m "Add Azure-Auth-React as a subdirectory and named it PROJECT_NAME"
 
 ## Add the second repository:
 
