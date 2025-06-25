@@ -1,0 +1,164 @@
+[
+    {
+        "name": "מירושלים לתל אביב",
+        "direction": "dropoff",
+        "stops": [
+            {
+                "name": "בית הדפוס",
+                "isBase": true,
+                "index": 0,
+                "estimatedArrivalTime": 0
+            },
+            {
+                "name": "מבשרת ציון",
+                "isBase": false,
+                "index": 1,
+                "estimatedArrivalTime": 14
+            },
+            {
+                "name": "נווה אילן",
+                "isBase": false,
+                "index": 2,
+                "estimatedArrivalTime": 20
+            },
+            {
+                "name": "שורש",
+                "isBase": false,
+                "index": 3,
+                "estimatedArrivalTime": 25
+            },
+            {
+                "name": "לטרון",
+                "isBase": false,
+                "index": 4,
+                "estimatedArrivalTime": 40
+            },
+            {
+                "name": "שפירים",
+                "isBase": false,
+                "index": 5,
+                "estimatedArrivalTime": 51
+            },
+            {
+                "name": "לה גווארדיה",
+                "isBase": false,
+                "index": 6,
+                "estimatedArrivalTime": 65
+            },
+            {
+                "name": "תחנת דלק איילון",
+                "isBase": false,
+                "index": 7,
+                "estimatedArrivalTime": 75
+            }
+        ],
+        "schedule": [
+            {
+                "weekday": "Sunday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Issa Mograbi",
+                    "phone": "1234567890",
+                    "email": "Issamm@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Monday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Issa Mograbi",
+                    "phone": "1234567890",
+                    "email": "Issamm@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Tuesday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Issa Mograbi",
+                    "phone": "1234567890",
+                    "email": "Issamm@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Wednesday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Issa Mograbi",
+                    "phone": "1234567890",
+                    "email": "Issamm@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Thursday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Issa Mograbi",
+                    "phone": "1234567890",
+                    "email": "Issamm@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Friday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Osama Mograbi",
+                    "phone": "1234567890",
+                    "email": "osamam@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            },
+            {
+                "weekday": "Saturday",
+                "isSpacial": true,
+                "cancellationTimeAllowed": 60,
+                "passengersNumberAllowed": 16,
+                "driver": {
+                    "name": "Osama Mograbi",
+                    "phone": "1234567890",
+                    "email": "osamam@kan.org.il"
+                },
+                "hour": 6,
+                "minute": 30,
+                "status": "new",
+                "isActive": true
+            }
+        ],
+        "isActive": true
+    }
+]

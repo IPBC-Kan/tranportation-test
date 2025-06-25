@@ -1,0 +1,561 @@
+[{
+  "_id": {
+    "$oid": "6857f772a25de344a7dab20e"
+  },
+  "name": "מנעימי לתל אביב",
+  "direction": "dropoff",
+  "stops": [
+    {
+      "name": "פארק נעימי",
+      "isBase": true,
+      "index": null,
+      "estimatedArrivalTime": 0,
+      "_id": {
+        "$oid": "6857fd4ba25de344a7dab284"
+      }
+    },
+    {
+      "name": "מסובים",
+      "isBase": false,
+      "index": 1,
+      "estimatedArrivalTime": 10,
+      "_id": {
+        "$oid": "6857fd66a25de344a7dab287"
+      }
+    },
+    {
+      "name": "דרך הטייסים",
+      "isBase": false,
+      "index": 2,
+      "estimatedArrivalTime": 15,
+      "_id": {
+        "$oid": "6857fd79a25de344a7dab28b"
+      }
+    },
+    {
+      "name": "לה-גוורדיה",
+      "isBase": false,
+      "index": 3,
+      "estimatedArrivalTime": 25,
+      "_id": {
+        "$oid": "6857fd92a25de344a7dab290"
+      }
+    },
+    {
+      "name": "רכבת השלום",
+      "isBase": false,
+      "index": 4,
+      "estimatedArrivalTime": 35,
+      "_id": {
+        "$oid": "6857fdb1a25de344a7dab296"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "weekday": "Sunday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 17,
+      "minute": 40,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6857fff6a25de344a7dab29d"
+      }
+    },
+    {
+      "weekday": "Monday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 17,
+      "minute": 40,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6857fffda25de344a7dab2a5"
+      }
+    },
+    {
+      "weekday": "Tuesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 17,
+      "minute": 40,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580005a25de344a7dab2ae"
+      }
+    },
+    {
+      "weekday": "Wednesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 17,
+      "minute": 40,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580012a25de344a7dab2b8"
+      }
+    },
+    {
+      "weekday": "Thursday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 17,
+      "minute": 40,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580020a25de344a7dab2c3"
+      }
+    }
+  ],
+  "isActive": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6857f7c7a25de344a7dab210"
+  },
+  "name": "מתל אביב לירושלים",
+  "direction": "dropoff",
+  "stops": [
+    {
+      "name": "בית הדפוס",
+      "isBase": true,
+      "index": null,
+      "estimatedArrivalTime": 80,
+      "_id": {
+        "$oid": "6857fc01a25de344a7dab25a"
+      }
+    },
+    {
+      "name": "תחנת דלק איילון",
+      "isBase": false,
+      "index": 1,
+      "estimatedArrivalTime": 0,
+      "_id": {
+        "$oid": "6857fc2da25de344a7dab25d"
+      }
+    },
+    {
+      "name": "ירידה לאיילון דרום",
+      "isBase": false,
+      "index": 2,
+      "estimatedArrivalTime": 3,
+      "_id": {
+        "$oid": "6857fc4ca25de344a7dab261"
+      }
+    },
+    {
+      "name": "רכבת ההגנה מתחת לגשר",
+      "isBase": false,
+      "index": 3,
+      "estimatedArrivalTime": 10,
+      "_id": {
+        "$oid": "6857fc6ca25de344a7dab266"
+      }
+    },
+    {
+      "name": "שפירים",
+      "isBase": false,
+      "index": 4,
+      "estimatedArrivalTime": 15,
+      "_id": {
+        "$oid": "6857fc8aa25de344a7dab26c"
+      }
+    },
+    {
+      "name": "לטרון",
+      "isBase": false,
+      "index": 5,
+      "estimatedArrivalTime": 35,
+      "_id": {
+        "$oid": "6857fca0a25de344a7dab273"
+      }
+    },
+    {
+      "name": "נווה אילן",
+      "isBase": false,
+      "index": 6,
+      "estimatedArrivalTime": 45,
+      "_id": {
+        "$oid": "6857fcbfa25de344a7dab27b"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "weekday": "Friday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Anas Rajbi",
+        "phone": "1234567890",
+        "email": "anasr@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 0,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6858021ca25de344a7dab331"
+      }
+    },
+    {
+      "weekday": "Saturday",
+      "isSpacial": true,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Issa Moghrabi",
+        "phone": "1234567890",
+        "email": "issam@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 0,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6858026ea25de344a7dab33b"
+      }
+    },
+    {
+      "weekday": "Sunday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Abu Savit",
+        "phone": "1234567890",
+        "email": "muhammada@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 15,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685802bba25de344a7dab346"
+      }
+    },
+    {
+      "weekday": "Monday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Abu Savit",
+        "phone": "1234567890",
+        "email": "muhammada@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 15,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685802c3a25de344a7dab352"
+      }
+    },
+    {
+      "weekday": "Tuesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Abu Savit",
+        "phone": "1234567890",
+        "email": "muhammada@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 15,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685802cba25de344a7dab35f"
+      }
+    },
+    {
+      "weekday": "Wednesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Abu Savit",
+        "phone": "1234567890",
+        "email": "muhammada@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 15,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685802daa25de344a7dab36d"
+      }
+    },
+    {
+      "weekday": "Thursday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Abu Savit",
+        "phone": "1234567890",
+        "email": "muhammada@kan.org.il"
+      },
+      "hour": 13,
+      "minute": 15,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685802e3a25de344a7dab37c"
+      }
+    }
+  ],
+  "isActive": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6857f7e4a25de344a7dab212"
+  },
+  "name": "מירושלים לתל אביב",
+  "direction": "pickup",
+  "stops": [
+    {
+      "name": "בית הדפוס",
+      "isBase": true,
+      "index": null,
+      "estimatedArrivalTime": 0,
+      "_id": {
+        "$oid": "6857fa08a25de344a7dab215"
+      }
+    },
+    {
+      "name": "מבשרת ציון",
+      "isBase": false,
+      "index": 1,
+      "estimatedArrivalTime": 14,
+      "_id": {
+        "$oid": "6857fa71a25de344a7dab218"
+      }
+    },
+    {
+      "name": "נווה אילן",
+      "isBase": false,
+      "index": 2,
+      "estimatedArrivalTime": 20,
+      "_id": {
+        "$oid": "6857fa87a25de344a7dab21c"
+      }
+    },
+    {
+      "name": "שורש",
+      "isBase": false,
+      "index": 3,
+      "estimatedArrivalTime": 25,
+      "_id": {
+        "$oid": "6857fa99a25de344a7dab221"
+      }
+    },
+    {
+      "name": "לטרון",
+      "isBase": false,
+      "index": 4,
+      "estimatedArrivalTime": 40,
+      "_id": {
+        "$oid": "6857faaaa25de344a7dab227"
+      }
+    },
+    {
+      "name": "שפירים",
+      "isBase": false,
+      "index": 5,
+      "estimatedArrivalTime": 51,
+      "_id": {
+        "$oid": "6857fac4a25de344a7dab22e"
+      }
+    },
+    {
+      "name": "לה גווארדיה",
+      "isBase": false,
+      "index": 6,
+      "estimatedArrivalTime": 65,
+      "_id": {
+        "$oid": "6857fad8a25de344a7dab236"
+      }
+    },
+    {
+      "name": "תחנת דלק איילון",
+      "isBase": false,
+      "index": 7,
+      "estimatedArrivalTime": 78,
+      "_id": {
+        "$oid": "6857faf2a25de344a7dab23f"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "weekday": "Sunday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685800efa25de344a7dab2cf"
+      }
+    },
+    {
+      "weekday": "Monday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "685800f9a25de344a7dab2da"
+      }
+    },
+    {
+      "weekday": "Tuesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580100a25de344a7dab2e6"
+      }
+    },
+    {
+      "weekday": "Wednesday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6858010ca25de344a7dab2f3"
+      }
+    },
+    {
+      "weekday": "Thursday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580122a25de344a7dab301"
+      }
+    },
+    {
+      "weekday": "Friday",
+      "isSpacial": true,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Muhammad Rajbi",
+        "phone": "1234567890",
+        "email": "rajbim@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "6858013ca25de344a7dab310"
+      }
+    },
+    {
+      "weekday": "Saturday",
+      "isSpacial": false,
+      "cancellationTimeAllowed": 60,
+      "passengersNumberAllowed": 16,
+      "driver": {
+        "name": "Anas Rajbi",
+        "phone": "1234567890",
+        "email": "anasr@kan.org.il"
+      },
+      "hour": 20,
+      "minute": 10,
+      "status": "new",
+      "isActive": true,
+      "_id": {
+        "$oid": "68580165a25de344a7dab320"
+      }
+    }
+  ],
+  "isActive": true,
+  "__v": 0
+}]

@@ -4,6 +4,6 @@ import { AuthenticatedRequest } from '../interfaces/Auth';
 import { getUser, routeGuard } from '../middleware/authorization';
 
 const user = new Controller.User();
-const router = express.Router();
+export const router = express.Router();
 
 router.get('/user', routeGuard, user.getUser);

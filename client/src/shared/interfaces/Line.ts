@@ -1,8 +1,9 @@
-import { Document } from 'mongoose';
-import { LineDirectionEnum } from '../enums/LineDirection';
-import { Weekday } from '../enums/Weekdays';
+// import { Document } from 'mongoose';
+// import { LineDirectionEnum } from '../enums/LineDirection';
+// import { Weekday } from '../enums/Weekdays';
 
-export interface ILineStop extends Document {
+export interface ILineStop {
+    _id?: string; // Optional, for mongoose documents
     name: string;
     isBase: boolean;
     index: number;
@@ -17,8 +18,8 @@ export interface Driver {
 
 // export type LineScheduleStatus = 'new' | 'deployed' | 'cancelled'
 
-export interface ILineSchedule extends Document {
-    // name: string;
+export interface ILineSchedule {
+    _id?: string; // Optional, for mongoose documents
     weekday: 'Sunday' | 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday';
     isSpacial: boolean;
     cancellationTimeAllowed: number; //minutes
@@ -30,9 +31,10 @@ export interface ILineSchedule extends Document {
     isActive: boolean;
 }
 
-export type LineDirection = keyof typeof LineDirectionEnum;
+export type LineDirection = 'pickup' | 'dropoff';
 
-export interface ILine extends Document {
+export interface ILine {
+    _id?: string; // Optional, for mongoose documents
     name: string;
     direction: LineDirection;
     stops: ILineStop[];

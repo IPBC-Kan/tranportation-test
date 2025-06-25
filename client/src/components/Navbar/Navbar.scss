@@ -1,0 +1,106 @@
+.navBarSide {
+    // position: fixed;
+    // top: 64px; // גובה הכותרת
+    // right: 0;
+    width: 80px;
+    // height: calc(100vh - 64px);
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.04);
+    // z-index: 90;
+}
+
+.navBarMobile {
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    width: 100vw;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+    // z-index: 90;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    // height: 64px;
+    background: rgb(80 187 130);
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: #333;
+    text-align: center;
+    white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+    .navBarSide {
+        display: none;
+    }
+    // .navBarMobile {
+    //     display: flex;
+    //     gap: 0;
+    //     padding: 0;
+    //     height: 100px;
+    // }
+    .navItem {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 56px; // לא פחות מזה
+        max-width: 80px;
+    }
+    .circle {
+        width: 48px;
+        max-width: 80%;
+        min-width: 32px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto 0.5rem auto;
+        background: rgb(80 187 130);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .navItem .label {
+        text-align: center;
+        white-space: nowrap;
+        display: flex;
+        font-size: 0.8rem;
+        // min-font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .navBarMobile {
+        display: none;
+    }
+}

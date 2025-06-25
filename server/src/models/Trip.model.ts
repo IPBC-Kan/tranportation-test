@@ -1,46 +1,31 @@
-import mongoose, { Schema, Document, Types } from 'mongoose';
-import { Weekday } from '../enums/Weekdays';
+import mongoose, { Schema } from 'mongoose';
 import UserSchema from './User.model';
-import { LineScheduleSchema } from './Line.model';
 import { ITrip } from '../interfaces';
+import { RegistrationSchema } from './Registration.model';
 
 // TripStop Schema
-const TripStopSchema = new Schema(
-    {
-        name: { type: String, required: true },
-        index: { type: Number, required: true },
-        estimatedArrivalTime: { type: Date, required: true },
-        passengers: [UserSchema], // array of passenger
-    },
-    { _id: false }
-);
-
-// TripDriver Schema
-// const TripDriverSchema = new Schema({
-//     name: { type: String, required: true },
-//     phone: { type: String, required: true },
-//     email: { type: String, required: true },
-// }, { _id: false });
+const TripStopSchema = new Schema({
+    name: { type: String, required: true },
+    index: { type: Number, required: false },
+    estimatedArrivalTime: { type: Date, required: false },
+    isBase: { type: Boolean, required: true }, // Indicates if this is the base stop
+    // passengers: [UserSchema], // array of passenger
+});
 
 // Chat Message Schema
-const TripChatMessageSchema = new Schema(
-    {
-        sender: { type: UserSchema, required: true },
-        message: { type: String, required: true },
-        timestamp: { type: Date, required: true },
-    },
-    { _id: false }
-);
+const TripChatMessageSchema = new Schema({
+    sender: { type: UserSchema, required: true },
+    message: { type: String, required: true },
+    timestamp: { type: Date, required: true },
+});
 
 // Trip Schema
 const TripSchema = new Schema({
-    line: {
-        name: { type: String, required: true },
-        direction: { type: String, enum: Object.values(Weekday), required: true },
-        schedule: { type: LineScheduleSchema, required: true },
-    },
+    lineName: { type: String, required: true },
     date: { type: Date, required: true },
+    chatMessages: { type: [TripChatMessageSchema], required: true },
     stops: { type: [TripStopSchema], required: true },
+    registrations: { type: [RegistrationSchema], required: true }, // <-- תיקון כאן
     isActive: { type: Boolean, required: true },
 });
 

@@ -1,7 +1,7 @@
-import { LineDirection, ILineSchedule } from './Line';
 import User from './User';
 
-export interface IRegistration extends Document {
+export interface IRegistration {
+    _id?: string; // Optional, for mongoose documents
     user: User;
     // later, add boardingStop and dropoffStop
     // boardingStop: string;

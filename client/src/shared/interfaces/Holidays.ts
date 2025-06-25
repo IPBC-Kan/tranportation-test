@@ -1,4 +1,4 @@
-import { HolidayType } from '../enums/Holidays';
+// import { HolidayType } from '../enums/Holidays';
 
 export interface IHoliday {
     _id: { $oid: string };

@@ -1,0 +1,2582 @@
+[
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2024-04-22",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2024-04-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2024-04-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2024-04-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2024-06-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2024-06-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2024-10-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5785",
+    "hebrewName": "ראש השנה 5785",
+    "date": "2024-10-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2024-10-04",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2024-10-11",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2024-10-12",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2024-10-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2024-10-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2024-10-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2024-10-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2025-04-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2025-04-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2025-04-18",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2025-04-19",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2025-06-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2025-06-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2025-09-22",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5786",
+    "hebrewName": "ראש השנה 5786",
+    "date": "2025-09-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2025-09-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2025-10-01",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2025-10-02",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2025-10-06",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2025-10-07",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2025-10-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2025-10-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2026-04-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2026-04-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2026-04-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2026-04-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2026-05-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2026-05-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2026-09-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5787",
+    "hebrewName": "ראש השנה 5787",
+    "date": "2026-09-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2026-09-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2026-09-20",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2026-09-21",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2026-09-25",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2026-09-26",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2026-10-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2026-10-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2027-04-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2027-04-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2027-04-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2027-04-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2027-06-10",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2027-06-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2027-10-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5788",
+    "hebrewName": "ראש השנה 5788",
+    "date": "2027-10-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2027-10-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2027-10-10",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2027-10-11",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2027-10-15",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2027-10-16",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2027-10-22",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2027-10-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2028-04-10",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2028-04-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2028-04-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2028-04-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2028-05-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2028-05-31",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2028-09-20",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5789",
+    "hebrewName": "ראש השנה 5789",
+    "date": "2028-09-21",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2028-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2028-09-29",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2028-09-30",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2028-10-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2028-10-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2028-10-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2028-10-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2029-03-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2029-03-31",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2029-04-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2029-04-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2029-05-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2029-05-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2029-09-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5790",
+    "hebrewName": "ראש השנה 5790",
+    "date": "2029-09-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2029-09-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2029-09-18",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2029-09-19",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2029-09-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2029-09-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2029-09-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2029-10-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2030-04-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2030-04-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2030-04-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2030-04-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2030-06-06",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2030-06-07",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2030-09-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5791",
+    "hebrewName": "ראש השנה 5791",
+    "date": "2030-09-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2030-09-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2030-10-06",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2030-10-07",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2030-10-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2030-10-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2030-10-18",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2030-10-19",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2031-04-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2031-04-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2031-04-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2031-04-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2031-05-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2031-05-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2031-09-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5792",
+    "hebrewName": "ראש השנה 5792",
+    "date": "2031-09-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2031-09-19",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2031-09-26",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2031-09-27",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2031-10-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2031-10-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2031-10-08",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2031-10-09",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2032-03-26",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2032-03-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2032-04-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2032-04-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2032-05-15",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2032-05-16",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2032-09-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5793",
+    "hebrewName": "ראש השנה 5793",
+    "date": "2032-09-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2032-09-07",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2032-09-14",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2032-09-15",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2032-09-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2032-09-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2032-09-26",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2032-09-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2033-04-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2033-04-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2033-04-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2033-04-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2033-06-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2033-06-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2033-09-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5794",
+    "hebrewName": "ראש השנה 5794",
+    "date": "2033-09-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2033-09-25",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2033-10-02",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2033-10-03",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2033-10-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2033-10-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2033-10-14",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2033-10-15",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2034-04-03",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2034-04-04",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2034-04-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2034-04-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2034-05-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2034-05-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2034-09-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5795",
+    "hebrewName": "ראש השנה 5795",
+    "date": "2034-09-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2034-09-15",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2034-09-22",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2034-09-23",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2034-09-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2034-09-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2034-10-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2034-10-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2035-04-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2035-04-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2035-04-29",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2035-04-30",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2035-06-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2035-06-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2035-10-03",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5796",
+    "hebrewName": "ראש השנה 5796",
+    "date": "2035-10-04",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2035-10-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2035-10-12",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2035-10-13",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2035-10-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2035-10-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2035-10-24",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2035-10-25",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2036-04-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2036-04-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2036-04-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2036-04-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2036-05-31",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2036-06-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2036-09-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5797",
+    "hebrewName": "ראש השנה 5797",
+    "date": "2036-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2036-09-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2036-09-30",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2036-10-01",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2036-10-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2036-10-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2036-10-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2036-10-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2037-03-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2037-03-31",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2037-04-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2037-04-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2037-05-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2037-05-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2037-09-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5798",
+    "hebrewName": "ראש השנה 5798",
+    "date": "2037-09-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2037-09-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2037-09-18",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2037-09-19",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2037-09-23",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2037-09-24",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2037-09-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2037-10-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2038-04-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2038-04-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2038-04-25",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2038-04-26",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2038-06-08",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2038-06-09",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2038-09-29",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5799",
+    "hebrewName": "ראש השנה 5799",
+    "date": "2038-09-30",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2038-10-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2038-10-08",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2038-10-09",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2038-10-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2038-10-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2038-10-20",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2038-10-21",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2039-04-08",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2039-04-09",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2039-04-14",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2039-04-15",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2039-05-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2039-05-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2039-09-18",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5800",
+    "hebrewName": "ראש השנה 5800",
+    "date": "2039-09-19",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2039-09-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2039-09-27",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2039-09-28",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2039-10-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2039-10-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2039-10-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2039-10-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2040-03-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2040-03-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2040-04-03",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2040-04-04",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2040-05-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2040-05-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2040-09-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5801",
+    "hebrewName": "ראש השנה 5801",
+    "date": "2040-09-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2040-09-09",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2040-09-16",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2040-09-17",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2040-09-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2040-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2040-09-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2040-09-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2041-04-15",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2041-04-16",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2041-04-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2041-04-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2041-06-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2041-06-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2041-09-25",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5802",
+    "hebrewName": "ראש השנה 5802",
+    "date": "2041-09-26",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2041-09-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2041-10-04",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2041-10-05",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2041-10-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2041-10-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2041-10-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2041-10-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2042-04-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2042-04-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2042-04-10",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2042-04-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2042-05-24",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2042-05-25",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2042-09-14",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5803",
+    "hebrewName": "ראש השנה 5803",
+    "date": "2042-09-15",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2042-09-16",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2042-09-23",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2042-09-24",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2042-09-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2042-09-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2042-10-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2042-10-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2043-04-24",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2043-04-25",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2043-04-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2043-05-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2043-06-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2043-06-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2043-10-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5804",
+    "hebrewName": "ראש השנה 5804",
+    "date": "2043-10-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2043-10-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2043-10-13",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2043-10-14",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2043-10-18",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2043-10-19",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2043-10-25",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2043-10-26",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2044-04-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2044-04-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2044-04-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2044-04-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2044-05-31",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2044-06-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2044-09-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5805",
+    "hebrewName": "ראש השנה 5805",
+    "date": "2044-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2044-09-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2044-09-30",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2044-10-01",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2044-10-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2044-10-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2044-10-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2044-10-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2045-04-01",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2045-04-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2045-04-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2045-04-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2045-05-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2045-05-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2045-09-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5806",
+    "hebrewName": "ראש השנה 5806",
+    "date": "2045-09-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2045-09-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2045-09-20",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2045-09-21",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2045-09-25",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2045-09-26",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2045-10-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2045-10-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2046-04-20",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2046-04-21",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2046-04-26",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2046-04-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2046-06-09",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2046-06-10",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2046-09-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5807",
+    "hebrewName": "ראש השנה 5807",
+    "date": "2046-10-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2046-10-02",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2046-10-09",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2046-10-10",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2046-10-14",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2046-10-15",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2046-10-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2046-10-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2047-04-10",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2047-04-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2047-04-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2047-04-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2047-05-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2047-05-31",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2047-09-20",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5808",
+    "hebrewName": "ראש השנה 5808",
+    "date": "2047-09-21",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2047-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2047-09-29",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2047-09-30",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2047-10-04",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2047-10-05",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2047-10-11",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2047-10-12",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2048-03-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2048-03-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2048-04-03",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2048-04-04",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2048-05-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2048-05-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2048-09-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5809",
+    "hebrewName": "ראש השנה 5809",
+    "date": "2048-09-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2048-09-09",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2048-09-16",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2048-09-17",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2048-09-21",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2048-09-22",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2048-09-28",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2048-09-29",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2049-04-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2049-04-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2049-04-22",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2049-04-23",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2049-06-05",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2049-06-06",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2049-09-26",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5810",
+    "hebrewName": "ראש השנה 5810",
+    "date": "2049-09-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2049-09-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2049-10-05",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2049-10-06",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2049-10-10",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2049-10-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2049-10-17",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2049-10-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2050-04-06",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2050-04-07",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2050-04-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2050-04-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2050-05-26",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2050-05-27",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2050-09-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5811",
+    "hebrewName": "ראש השנה 5811",
+    "date": "2050-09-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2050-09-18",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2050-09-25",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2050-09-26",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2050-09-30",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2050-10-01",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2050-10-07",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2050-10-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2051-03-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2051-03-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2051-04-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2051-04-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2051-05-16",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2051-05-17",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Rosh Hashana",
+    "hebrewName": "ערב ראש השנה",
+    "date": "2051-09-06",
+    "typeNumber": 1
+  },
+  {
+    "name": "Rosh Hashana 5812",
+    "hebrewName": "ראש השנה 5812",
+    "date": "2051-09-07",
+    "typeNumber": 2
+  },
+  {
+    "name": "Rosh Hashana II",
+    "hebrewName": "ראש השנה ב׳",
+    "date": "2051-09-08",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Yom Kippur",
+    "hebrewName": "ערב יום כפור",
+    "date": "2051-09-15",
+    "typeNumber": 0
+  },
+  {
+    "name": "Yom Kippur",
+    "hebrewName": "יום כפור",
+    "date": "2051-09-16",
+    "typeNumber": 0
+  },
+  {
+    "name": "Erev Sukkot",
+    "hebrewName": "ערב סוכות",
+    "date": "2051-09-20",
+    "typeNumber": 1
+  },
+  {
+    "name": "Sukkot I",
+    "hebrewName": "סוכות א׳",
+    "date": "2051-09-21",
+    "typeNumber": 2
+  },
+  {
+    "name": "Sukkot VII (Hoshana Raba)",
+    "hebrewName": "סוכות ז׳ (הושענא רבה)",
+    "date": "2051-09-27",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shmini Atzeret",
+    "hebrewName": "שמיני עצרת",
+    "date": "2051-09-28",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Pesach",
+    "hebrewName": "ערב פסח",
+    "date": "2052-04-13",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach I",
+    "hebrewName": "פסח א׳",
+    "date": "2052-04-14",
+    "typeNumber": 2
+  },
+  {
+    "name": "Pesach VI (CH''M)",
+    "hebrewName": "פסח ו׳ (חוה״מ)",
+    "date": "2052-04-19",
+    "typeNumber": 1
+  },
+  {
+    "name": "Pesach VII",
+    "hebrewName": "פסח ז׳",
+    "date": "2052-04-20",
+    "typeNumber": 2
+  },
+  {
+    "name": "Erev Shavuot",
+    "hebrewName": "ערב שבועות",
+    "date": "2052-06-02",
+    "typeNumber": 1
+  },
+  {
+    "name": "Shavuot",
+    "hebrewName": "שבועות",
+    "date": "2052-06-03",
+    "typeNumber": 2
+  },
+  {
+    "name": "test 11/12/23",
+    "hebrewName": "חג טסט 11.12.23",
+    "date": "2023-12-11",
+    "typeNumber": 2
+  },
+  {
+    "name": "test 12.12.23",
+    "hebrewName": "טסט 1",
+    "date": "2023-12-12",
+    "typeNumber": 1
+  },
+  {
+    "name": "test 13.12.23",
+    "hebrewName": "טסט 2",
+    "date": "2023-12-13",
+    "typeNumber": 2
+  },
+  {
+    "name": "test 14.12.23",
+    "hebrewName": "טסט 3",
+    "date": "2023-12-14",
+    "typeNumber": 0
+  }
+]

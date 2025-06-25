@@ -3,4 +3,4 @@ import { RootState } from '../store';
 
 export const getCurrentUser = (state: RootState) => state.auth.user;
 
-export const getIsAdmin = createSelector([getCurrentUser], (user) => user.role);
+// export const getIsAdmin = createSelector([getCurrentUser], (user) => user.role);

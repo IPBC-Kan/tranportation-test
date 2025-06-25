@@ -1,8 +1,9 @@
-import { Document } from 'mongoose';
+// import { Document } from 'mongoose';
 import User from './User';
 import { IRegistration } from './Registration';
 
-export interface ITrip extends Document {
+export interface ITrip {
+    _id?: string; // Optional, for mongoose documents
     lineName: string;
     date: Date;
     chatMessages: ITripChatMessage[];
@@ -11,7 +12,8 @@ export interface ITrip extends Document {
     isActive: boolean;
 }
 
-export interface ITripStop extends Document {
+export interface ITripStop {
+    _id?: string; // Optional, for mongoose documents
     name: string;
     index?: number;
     // passengers: User[];
@@ -19,7 +21,8 @@ export interface ITripStop extends Document {
     isBase: boolean; // Indicates if this is the base stop
 }
 
-export interface ITripChatMessage extends Document {
+export interface ITripChatMessage {
+    _id?: string; // Optional, for mongoose documents
     sender: User;
     message: string;
     timestamp: Date;

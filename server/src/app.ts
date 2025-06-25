@@ -11,6 +11,7 @@ import { AuthenticatedRequest } from './interfaces/Auth';
 import mongoose from 'mongoose';
 import { connectDB } from './db/database';
 import { config } from 'dotenv';
+import { getHolidayByDate } from './services/holidayService';
 
 // import CHANNEL from './db/models/channels';
 
@@ -46,12 +47,34 @@ connectDB()
     .then(() => {
         console.log('Database connected, setting up routes...');
 
-        // Secure API routes after successful DB connection
-        app.use(authenticate);
-        app.use((req, res, next) => getUser(req as AuthenticatedRequest, res, next));
+        app.use('/api/test', (req, res) => {
+            const { date } = req.query;
+            getHolidayByDate(new Date(date as string))
+                .then((holiday) => {
+                    if (!holiday) {
+                        return res.status(404).json({ error: 'Holiday not found' });
+                    }
+                    res.json(holiday);
+                })
+                .catch((err) => {
+                    res.status(500).json({ error: (err as Error).message });
+                });
+        });
+        app.use('/api/line', router.line);
+        app.use('/api/trip', router.trip);
+        app.use('/api/registration', router.registration);
+        app.use('/api/deployment', router.deployment);
 
-        // API routes setup
-        app.use('/api/auth', router.auth);
+        // // Secure API routes after successful DB connection
+        // app.use(authenticate);
+        // app.use((req, res, next) => getUser(req as AuthenticatedRequest, res, next));
+
+        // // API routes setup
+        // app.use('/api/auth', router.auth);
+
+        // app.use('/api/line', router.line);
+        // app.use('/api/trip', router.trip);
+        // app.use('/api/registration', router.registration);
 
         // Custom middleware for not found and error handling
         app.use(middleware._notFound);

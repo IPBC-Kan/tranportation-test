@@ -17,3 +17,32 @@ export const weekdayLabels = {
     [Weekday.Friday]: 'שישי',
     [Weekday.Saturday]: 'שבת',
 };
+
+export const getDayNumber = (day: string): Weekday | null => {
+    const dayLower = day.toLowerCase();
+    switch (dayLower) {
+        case 'sunday':
+        case 'ראשון':
+            return Weekday.Sunday;
+        case 'monday':
+        case 'שני':
+            return Weekday.Monday;
+        case 'tuesday':
+        case 'שלישי':
+            return Weekday.Tuesday;
+        case 'wednesday':
+        case 'רביעי':
+            return Weekday.Wednesday;
+        case 'thursday':
+        case 'חמישי':
+            return Weekday.Thursday;
+        case 'friday':
+        case 'שישי':
+            return Weekday.Friday;
+        case 'saturday':
+        case 'שבת':
+            return Weekday.Saturday;
+        default:
+            return null;
+    }
+};
