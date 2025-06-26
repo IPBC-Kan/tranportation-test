@@ -47,6 +47,13 @@ connectDB()
     .then(() => {
         console.log('Database connected, setting up routes...');
 
+        // Secure API routes after successful DB connection
+        app.use(authenticate);
+        app.use((req, res, next) => getUser(req as AuthenticatedRequest, res, next));
+
+        // API routes setup
+        app.use('/api/auth', router.auth);
+
         app.use('/api/test', (req, res) => {
             const { date } = req.query;
             getHolidayByDate(new Date(date as string))
@@ -64,13 +71,6 @@ connectDB()
         app.use('/api/trip', router.trip);
         app.use('/api/registration', router.registration);
         app.use('/api/deployment', router.deployment);
-
-        // // Secure API routes after successful DB connection
-        // app.use(authenticate);
-        // app.use((req, res, next) => getUser(req as AuthenticatedRequest, res, next));
-
-        // // API routes setup
-        // app.use('/api/auth', router.auth);
 
         // app.use('/api/line', router.line);
         // app.use('/api/trip', router.trip);
