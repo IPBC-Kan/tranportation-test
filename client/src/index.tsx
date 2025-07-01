@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { AuthenticationResult, EventMessage, EventType, PublicClientApplication } from '@azure/msal-browser';
 import { loginRequest, msalConfig } from 'Auth/authConfig';
 import { MsalProvider } from '@azure/msal-react';
 import { Provider } from 'react-redux';
-import { persistor, store } from 'store/store';
-import { setAccessToken } from 'store/slices/authSlice';
+import { actions, persistor, store } from 'store/store';
+// import { setAccessToken } from 'store/slices/authSlice';
 import { appApiProvider } from 'api/axiosApiProvider';
 import { AppRouter } from 'router/Router';
 import { createTheme, ThemeProvider } from '@mui/material';
@@ -32,7 +32,8 @@ msalInstance.addEventCallback((event: EventMessage) => {
     if (event.eventType === EventType.ACQUIRE_TOKEN_SUCCESS && event.payload) {
         const payload = event.payload as AuthenticationResult;
         const token = payload.accessToken;
-        store.dispatch(setAccessToken(token));
+        // store.dispatch(setAccessToken(token));
+        actions.accessToken.set(token);
 
         appApiProvider.updateJwtToken(token);
     }
@@ -40,15 +41,14 @@ msalInstance.addEventCallback((event: EventMessage) => {
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-    <React.StrictMode>
-        <ThemeProvider theme={createTheme(theme)}>
-            <MsalProvider instance={msalInstance}>
-                <Provider store={store}>
-                    <PersistGate loading={null} persistor={persistor}>
-                        <AppRouter />
-                    </PersistGate>
-                </Provider>
-            </MsalProvider>
-        </ThemeProvider>
-    </React.StrictMode>
+    <ThemeProvider theme={createTheme(theme)}>
+        {/* <GlobalFonts /> */}
+        <MsalProvider instance={msalInstance}>
+            <Provider store={store}>
+                <PersistGate loading={null} persistor={persistor}>
+                    <AppRouter />
+                </PersistGate>
+            </Provider>
+        </MsalProvider>
+    </ThemeProvider>
 );

@@ -28,14 +28,15 @@ const MainPage = () => {
         // </div>
         <div>
             {currentUser && (
-                <div className="main-layout">
-                    <Header userName={currentUser?.name || ''} />
-                    {/* <div className="main-wrapper" style={{ height: '100%', width: '100%' }}> */}
-                    <div className="main-wrapper">
-                        <div className="main-content"></div>
-                        <NavBar />
-                    </div>
-                </div>
+                <></>
+                // <div className="main-layout">
+                //     <Header userName={currentUser?.name || ''} />
+                //     {/* <div className="main-wrapper" style={{ height: '100%', width: '100%' }}> */}
+                //     <div className="main-wrapper">
+                //         <div className="main-content"></div>
+                //         <NavBar />
+                //     </div>
+                // </div>
             )}
         </div>
     );

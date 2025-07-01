@@ -1,28 +1,30 @@
 import { Box } from '@mui/material';
-import { FC, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useMsal } from '@azure/msal-react';
 import { GeneralNavRoutes } from 'shared';
 import { useAuth } from 'hooks';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { InteractionStatus } from '@azure/msal-browser';
-// import styles from './mainLayout.module.scss';
 import './mainLayout.scss';
 import { getIsUserAuthenticated } from 'store/selectors';
 import { getCurrentUser } from 'store/selectors/user.selector';
 import { appNavigator } from 'router/appNavigator';
 import { authService } from 'api/authentication.service';
-import { setUser } from 'store/slices/authSlice';
 import { Header } from 'components/Header/Header';
 import { NavBar } from 'components/Navbar/Navbar';
+import { actions } from 'store/store';
+import { selectIsAppOnManagementMode } from 'store/selectors/appMode.selector';
+import { ExitManagementButton } from 'components/ExitManagementButton/ExitManagementButton';
 
 export const MainLayout: React.FC = () => {
     const isAuthenticated = useSelector(getIsUserAuthenticated);
     const currentUser = useSelector(getCurrentUser);
+    const isManagerMode = useSelector(selectIsAppOnManagementMode);
     const { instance, inProgress } = useMsal();
     const { getToken } = useAuth();
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     // no active account in storage, go to sign-in page
     useEffect(() => {
@@ -53,23 +55,25 @@ export const MainLayout: React.FC = () => {
                 if (errorTranslationKey) {
                     appNavigator.navigate(GeneralNavRoutes.Login);
                 } else {
-                    dispatch(setUser(user));
+                    actions.user.set(user);
+                    // dispatch(setUser(user));
                 }
             }
         })();
     }, [currentUser, isAuthenticated]);
 
     return (
-        <div>
+        <div style={{ direction: 'rtl' }}>
             {isAuthenticated && (
-                <Box component="main">
-                    {/* <Header userName={currentUser?.name || ''} />
+                <Box component="main" className="main-layout">
+                    <Header userName={currentUser?.name || ''} />
                     <div className="main-wrapper">
-                        <NavBar />
-                        <div className="main-content"></div>
-                    </div> */}
-
-                    <Outlet />
+                        {!isManagerMode && <NavBar />}
+                        <div className="main-content" style={{ position: 'relative' }}>
+                            {isManagerMode && <ExitManagementButton />}
+                            <Outlet />
+                        </div>
+                    </div>
                 </Box>
             )}
         </div>

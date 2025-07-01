@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
-import { RootState } from '../store';
+import { AppState } from '../store';
+import { isEmptyObj } from 'shared/utils/generalUtils';
 
-export const getCurrentUser = (state: RootState) => state.auth.user;
+export const getUser = (state: AppState) => state.user;
 
-// export const getIsAdmin = createSelector([getCurrentUser], (user) => user.role);
+export const getCurrentUser = createSelector(getUser, (user) => (isEmptyObj(user) ? null : user));

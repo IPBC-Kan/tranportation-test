@@ -1,3 +1,4 @@
+import { createArrayState, createObjectState, createValueState, QuickReduxDispatch } from 'hooks/services/state';
 import { User } from 'shared';
 import { ILine, ITrip } from 'shared/interfaces';
 
@@ -8,9 +9,10 @@ export interface AuthState {
 
 export interface RootState {
     auth: AuthState;
-    lines: ILine[]; // Assuming ILine is defined in your interfaces
-    trips: ITrip[]; // Assuming ITrip is defined in your interfaces
-    registeredTrips: ITrip[]; // Assuming ITrip is defined in your interfaces
+    isApplicationManagementMode: boolean;
+    lines: ILine[];
+    trips: ITrip[];
+    registeredTrips: ITrip[];
     // Add other state slices here
 }
 
@@ -25,5 +27,28 @@ export const initialState: RootState = {
     lines: [], // Add initial state for lines
     trips: [], // Add initial state for trips
     registeredTrips: [], // Add initial state for registered trips
+    isApplicationManagementMode: false, // Default mode
     // Add initial states for other slices
+};
+
+export const createStates = (dispatch: QuickReduxDispatch) => {
+    return {
+        user: createObjectState<User>('user', dispatch, {
+            persist: true,
+        }),
+        accessToken: createValueState<string>('accessToken', dispatch, {
+            persist: false,
+        }),
+        isApplicationManagementMode: createValueState<boolean>('isApplicationManagementMode', dispatch, { persist: true }),
+
+        lines: createArrayState<ILine>('lines', dispatch, {
+            initialValue: [],
+        }),
+        trips: createArrayState<ITrip>('trips', dispatch, {
+            initialValue: [],
+        }),
+        registeredTrips: createArrayState<ITrip>('registeredTrips', dispatch, {
+            initialValue: [],
+        }),
+    };
 };

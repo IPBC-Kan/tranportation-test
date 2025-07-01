@@ -14,70 +14,58 @@ import { getIsUserAuthenticated } from 'store/selectors';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { AuthLayout, MainLayout } from 'layout';
 import { applicationRoutes } from './Routes';
+import { useAppInitialization } from 'hooks/useAppInitialization.hook';
+import RegistrationPage from 'pages/RegistrationPage/RegistrationPage';
 
-const importModule = (moduleName: string) =>
-	lazy(() => import(`pages/${moduleName}`));
+const importModule = (moduleName: string) => lazy(() => import(`pages/${moduleName}`));
 
 export const AppRouter = () => {
-	const isAuthenticated = useSelector(getIsUserAuthenticated);
+    const isAuthenticated = useSelector(getIsUserAuthenticated);
 
-	const isAuthorized = (authorizedRoles: RoleEnum[]): boolean => {
-		return (
-			isAuthenticated &&
-			(!authorizedRoles || authorizedRoles.includes('Admin' as RoleEnum))
-		);
-	};
+    useAppInitialization();
 
-	const addRoute = (
-		needToBeAuthenticated: boolean,
-		[route, info]: [string, IRoute]
-	) => {
-		const getRouteContent = () => {
-			if (needToBeAuthenticated && !isAuthorized(info.authRoles)) {
-				return NoAccess;
-			}
+    const isAuthorized = (authorizedRoles: RoleEnum[]): boolean => {
+        return isAuthenticated && (!authorizedRoles || authorizedRoles.includes('Admin' as RoleEnum));
+    };
 
-			if ((info.renderSource as { moduleToLoad: string }).moduleToLoad) {
-				return importModule((info.renderSource as any).moduleToLoad);
-			}
+    const addRoute = (needToBeAuthenticated: boolean, [route, info]: [string, IRoute]) => {
+        const getRouteContent = () => {
+            if (needToBeAuthenticated && !isAuthorized(info.authRoles)) {
+                return NoAccess;
+            }
 
-			if (
-				(info.renderSource as { componentToRender: () => JSX.Element })
-					.componentToRender
-			) {
-				return (info.renderSource as any).componentToRender;
-			}
+            if ((info.renderSource as { moduleToLoad: string }).moduleToLoad) {
+                return importModule((info.renderSource as any).moduleToLoad);
+            }
 
-			throw new Error(
-				`Cannot add route: route doesn't have renderSource, route: ${route}`
-			);
-		};
+            if ((info.renderSource as { componentToRender: () => JSX.Element }).componentToRender) {
+                return (info.renderSource as any).componentToRender;
+            }
 
-		const ComponentToRender = getRouteContent();
+            throw new Error(`Cannot add route: route doesn't have renderSource, route: ${route}`);
+        };
 
-		return (
-			<Route path={`/${route}`} key={route} element={<ComponentToRender />} />
-		);
-	};
-	return (
-		<BrowserRouter>
-			<Suspense fallback={<div>Loading...</div>}>
-				<Routes>
-					<Route path="/auth" element={<AuthLayout />}>
-						{Object.entries(applicationRoutes.auth).map((route) =>
-							addRoute(false, route)
-						)}
-						<Route path="*" element={<Navigate to="/auth/login" replace />} />
-					</Route>
-					<Route path="/" element={<MainLayout />}>
-						{Object.entries(applicationRoutes.main).map((route) =>
-							addRoute(!!route[1].authRoles, route)
-						)}
-						<Route path="/" element={<Navigate to="/main" replace />} />
-						<Route path="*" element={<NotFound />} />
-					</Route>
-				</Routes>
-			</Suspense>
-		</BrowserRouter>
-	);
+        const ComponentToRender = getRouteContent();
+
+        return <Route path={`/${route}`} key={route} element={<ComponentToRender />} />;
+    };
+    return (
+        <BrowserRouter>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/auth" element={<AuthLayout />}>
+                        {Object.entries(applicationRoutes.auth).map((route) => addRoute(false, route))}
+                        <Route path="*" element={<Navigate to="/auth/login" replace />} />
+                    </Route>
+                    <Route path="/" element={<MainLayout />}>
+                        {Object.entries(applicationRoutes.main).map((route) => addRoute(!!route[1].authRoles, route))}
+                        <Route path="/" element={<Navigate to="/main" replace />} />
+                        <Route path="*" element={<NotFound />} />
+
+                        <Route path="/registration" element={<RegistrationPage />} />
+                    </Route>
+                </Routes>
+            </Suspense>
+        </BrowserRouter>
+    );
 };
