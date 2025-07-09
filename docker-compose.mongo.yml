@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo-dev-instance
+    ports:
+      - "27017:27017"
+    volumes:
+      - dev_mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  dev_mongo_data:
+    external: true
+
+# To run the MongoDB container:
+# docker compose -f docker-compose.mongo.yml up -d
+# To stop and remove the container:
+# docker compose -f docker-compose.mongo.yml down
+# Make sure you are in the directory where this file is located before running the commands.
+# To run the MongoDB container:
+# docker compose -f docker-compose.mongo.yml up -d
+# To stop and remove the container:
+# docker compose -f docker-compose.mongo.yml down
+# Make sure you are in the directory where this file is located before running the commands.

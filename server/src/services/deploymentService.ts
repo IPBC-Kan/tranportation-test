@@ -192,10 +192,16 @@ const createTrip = async (
     date: Date,
     deployAllAsSpecial = false
 ): Promise<ITrip | null> => {
+    // Determine lineDirection and isSpecial
+    const lineDirection = line.direction || 'pickup'; // fallback if not present
+    const isSpecial = !!(schedule.isSpacial || deployAllAsSpecial);
+
     // Create the trip document
     const tripDoc = await Trip.create({
         lineName: line.name,
+        lineDirection,
         date: date,
+        isSpecial,
         stops: [],
         registrations: [],
         chatMessages: [],

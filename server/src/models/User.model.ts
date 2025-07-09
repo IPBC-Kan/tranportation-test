@@ -1,13 +1,14 @@
 import { Schema } from 'mongoose';
 
-const UserSchema = new Schema({
-    id: { type: Number, required: true },
-    displayName: { type: String, required: true },
-    emailAddress: { type: String, required: true },
-    phoneNumber: { type: String, required: true },
-    title: { type: String, required: true },
-    department: { type: String, required: true },
-    fullName: { type: String, required: true },
-});
+// User subdocument schema without _id, id is Azure id
+const UserSchema = new Schema(
+    {
+        id: { type: String, required: true }, // Azure ID
+        name: { type: String, required: true },
+        email: { type: String, required: true },
+        phone: { type: String, required: true },
+    },
+    { _id: false }
+);
 
 export default UserSchema;

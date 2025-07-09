@@ -5,7 +5,24 @@ import { IRegistration } from '../interfaces/Registration';
 export const registerToTrip = async (tripId: string, registrationData: IRegistration) => {
     const trip = await Trip.findById(tripId);
     if (!trip) throw new Error('Trip not found');
-    // אפשר למנוע כפילויות לפי user.id אם צריך
+
+    // בדיקה אם כבר קיים רישום פעיל של אותו יוזר לנסיעה
+    const alreadyRegistered = trip.registrations.some(
+        (reg: any) => reg.user?.id?.toString() === registrationData.user?.id?.toString() && !reg.isCancelled
+    );
+    if (alreadyRegistered) {
+        const err: any = new Error('המשתמש כבר רשום לנסיעה זו');
+        err.status = 400;
+        throw err;
+    }
+
+    // Validate boardingStop and dropoffStop
+    if (!registrationData.boardingStop || !registrationData.dropoffStop) {
+        const err: any = new Error('יש לבחור תחנת עלייה ותחנת ירידה');
+        err.status = 400;
+        throw err;
+    }
+
     trip.registrations.push({
         ...registrationData,
         registrationDate: new Date(),
@@ -13,6 +30,8 @@ export const registerToTrip = async (tripId: string, registrationData: IRegistra
         cancellationDate: undefined,
         isLateCancellation: false,
     });
+    console.log(trip.registrations[0].user);
+
     await trip.save();
     return trip;
 };
@@ -21,7 +40,7 @@ export const registerToTrip = async (tripId: string, registrationData: IRegistra
 export const cancelRegistration = async (tripId: string, userId: string, isLateCancellation = false) => {
     const trip = await Trip.findById(tripId);
     if (!trip) throw new Error('Trip not found');
-    const reg = trip.registrations.find((r: any) => r.user._id?.toString() === userId || r.user.id?.toString() === userId);
+    const reg = trip.registrations.find((r: any) => r.user.id?.toString() === userId);
     if (!reg) throw new Error('Registration not found');
     reg.isCancelled = true;
     reg.cancellationDate = new Date();
@@ -34,9 +53,7 @@ export const cancelRegistration = async (tripId: string, userId: string, isLateC
 export const cancelRegistrationByRegistrationId = async (tripId: string, registrationId: string, isLateCancellation = false) => {
     const trip = await Trip.findById(tripId);
     if (!trip) throw new Error('Trip not found');
-    const reg = trip.registrations.find(
-        (r: any) => r._id?.toString() === registrationId
-    );
+    const reg = trip.registrations.find((r: any) => r._id?.toString() === registrationId);
     if (!reg) throw new Error('Registration not found');
     reg.isCancelled = true;
     reg.cancellationDate = new Date();
@@ -49,7 +66,7 @@ export const cancelRegistrationByRegistrationId = async (tripId: string, registr
 export const redoRegistration = async (tripId: string, userId: string) => {
     const trip = await Trip.findById(tripId);
     if (!trip) throw new Error('Trip not found');
-    const reg = trip.registrations.find((r: any) => r.user._id?.toString() === userId || r.user.id?.toString() === userId);
+    const reg = trip.registrations.find((r: any) => r.user.id?.toString() === userId);
     if (!reg) throw new Error('Registration not found');
     reg.isCancelled = false;
     reg.cancellationDate = undefined;
@@ -62,13 +79,27 @@ export const redoRegistration = async (tripId: string, userId: string) => {
 export const redoRegistrationByRegistrationId = async (tripId: string, registrationId: string) => {
     const trip = await Trip.findById(tripId);
     if (!trip) throw new Error('Trip not found');
-    const reg = trip.registrations.find(
-        (r: any) => r._id?.toString() === registrationId
-    );
+    const reg = trip.registrations.find((r: any) => r._id?.toString() === registrationId);
     if (!reg) throw new Error('Registration not found');
     reg.isCancelled = false;
     reg.cancellationDate = undefined;
     reg.isLateCancellation = false;
+    await trip.save();
+    return trip;
+};
+
+// Update a registration's stops
+export const updateRegistration = async (
+    tripId: string,
+    registrationId: string,
+    updateData: { boardingStop: string; dropoffStop: string }
+) => {
+    const trip = await Trip.findById(tripId);
+    if (!trip) throw new Error('Trip not found');
+    const reg = trip.registrations.find((r: any) => r._id?.toString() === registrationId);
+    if (!reg) throw new Error('Registration not found');
+    reg.boardingStop = updateData.boardingStop;
+    reg.dropoffStop = updateData.dropoffStop;
     await trip.save();
     return trip;
 };

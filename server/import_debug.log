@@ -1,0 +1,472 @@
+Using CSV base path: C:\dev\auth_repos_test\tranportation-test\server\src\helperFiles\data_csv
+linesCsv: 3 stopsCsv: 27 schedulesCsv: 99
+First line row: {
+  'מזהה': '1',
+  'כותרת': 'מתל אביב לירושלים',
+  'סוג הקו': 'איסוף',
+  'סטטוס': 'חדש',
+  'סטטוס גיבוי': 'נוצר'
+}
+First stop row: {
+  'מזהה': '1',
+  'כותרת': 'בית הדפוס',
+  'קו': 'מירושלים לתל אביב',
+  'קו: מזהה': '2',
+  'תחנת בסיס': 'נכון',
+  'אינדקס': '',
+  'זמן משוער': '0',
+  'סטטוס גיבוי': 'נוצר',
+  'נוצר': '2024-01-16T11:57:16Z',
+  'השתנה': '2024-01-16T11:57:16Z'
+}
+First schedule row: {
+  'מזהה': '1',
+  'כותרת': 'ראשון 06:30',
+  'קו': 'מירושלים לתל אביב',
+  'קו: מזהה': '2',
+  'יום': 'ראשון',
+  'ספיישל': 'נכון',
+  'זמן ביטול': '60',
+  'מספר נוסעים': '16',
+  'נהג': 'Issam@kan.org.il',
+  'סטטוס': 'בפריסה',
+  'סטטוס גיבוי': 'נוצר',
+  'שעה': '6',
+  'דקות': '30',
+  'נוצר': '2024-01-16T11:54:44Z'
+}
+First constructed line: {
+  name: 'מתל אביב לירושלים',
+  direction: 'pickup',
+  stops: [
+    {
+      name: 'רכבת ההגנה מתחת לגשר',
+      isBase: false,
+      index: 3,
+      estimatedArrivalTime: 10
+    },
+    {
+      name: 'שפירים',
+      isBase: false,
+      index: 4,
+      estimatedArrivalTime: 15
+    },
+    {
+      name: 'נווה אילן',
+      isBase: false,
+      index: 6,
+      estimatedArrivalTime: 45
+    },
+    {
+      name: 'לטרון',
+      isBase: false,
+      index: 5,
+      estimatedArrivalTime: 35
+    },
+    {
+      name: 'בית הדפוס',
+      isBase: true,
+      index: 0,
+      estimatedArrivalTime: 80
+    },
+    {
+      name: 'תחנת דלק איילון',
+      isBase: false,
+      index: 1,
+      estimatedArrivalTime: 0
+    },
+    {
+      name: 'ירידה לאיילון דרום',
+      isBase: false,
+      index: 2,
+      estimatedArrivalTime: 3
+    }
+  ],
+  schedule: [
+    {
+      weekday: 'Sunday',
+      isSpacial: true,
+      cancellationTimeAllowed: 520,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 40,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Monday',
+      isSpacial: true,
+      cancellationTimeAllowed: 520,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 40,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Tuesday',
+      isSpacial: true,
+      cancellationTimeAllowed: 520,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 40,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Wednesday',
+      isSpacial: true,
+      cancellationTimeAllowed: 520,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 40,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Thursday',
+      isSpacial: true,
+      cancellationTimeAllowed: 520,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 40,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Friday',
+      isSpacial: true,
+      cancellationTimeAllowed: 525,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 45,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Saturday',
+      isSpacial: true,
+      cancellationTimeAllowed: 525,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 4,
+      minute: 45,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Sunday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 8,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Monday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 8,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Tuesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 8,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Wednesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 8,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Thursday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 8,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Sunday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 11,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Monday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 11,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Tuesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 11,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Wednesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 11,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Thursday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 11,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Sunday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Monday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Tuesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Wednesday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Thursday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Sunday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Monday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Tuesday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Wednesday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Thursday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Friday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Saturday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 21,
+      minute: 15,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Friday',
+      isSpacial: false,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Saturday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 13,
+      minute: 0,
+      status: 'deployed',
+      isActive: true
+    },
+    {
+      weekday: 'Saturday',
+      isSpacial: true,
+      cancellationTimeAllowed: 60,
+      passengersNumberAllowed: 16,
+      driver: [Object],
+      hour: 10,
+      minute: 50,
+      status: 'deployed',
+      isActive: true
+    }
+  ],
+  isActive: true
+}
+MongooseServerSelectionError: getaddrinfo ENOENT host.docker.internal
+    at _handleConnectionErrors (C:\dev\auth_repos_test\tranportation-test\server\node_modules\mongoose\lib\connection.js:1165:11)
+    at NativeConnection.openUri (C:\dev\auth_repos_test\tranportation-test\server\node_modules\mongoose\lib\connection.js:1096:11) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  }
+}

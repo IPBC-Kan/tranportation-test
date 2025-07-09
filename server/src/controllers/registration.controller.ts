@@ -6,7 +6,7 @@ export const registerToTrip = async (req: Request, res: Response) => {
     const { tripId } = req.params;
     try {
         const trip = await registrationService.registerToTrip(tripId, req.body);
-        res.status(201).json(trip);
+        res.status(200).send(trip);
     } catch (err) {
         res.status(400).json({ error: (err as Error).message });
     }
@@ -16,8 +16,12 @@ export const registerToTrip = async (req: Request, res: Response) => {
 export const cancelRegistration = async (req: Request, res: Response) => {
     const { tripId, registrationId } = req.params;
     try {
-        const trip = await registrationService.cancelRegistrationByRegistrationId(tripId, registrationId, req.body.isLateCancellation);
-        res.json(trip);
+        const trip = await registrationService.cancelRegistrationByRegistrationId(
+            tripId,
+            registrationId,
+            req.body.isLateCancellation
+        );
+        res.status(200).send(trip);
     } catch (err) {
         res.status(400).json({ error: (err as Error).message });
     }
@@ -28,7 +32,19 @@ export const redoRegistration = async (req: Request, res: Response) => {
     const { tripId, registrationId } = req.params;
     try {
         const trip = await registrationService.redoRegistrationByRegistrationId(tripId, registrationId);
-        res.json(trip);
+        res.status(200).send(trip);
+    } catch (err) {
+        res.status(400).json({ error: (err as Error).message });
+    }
+};
+
+// Update a registration's stops
+export const updateRegistration = async (req: Request, res: Response) => {
+    const { tripId, registrationId } = req.params;
+    const { boardingStop, dropoffStop } = req.body;
+    try {
+        const trip = await registrationService.updateRegistration(tripId, registrationId, { boardingStop, dropoffStop });
+        res.status(200).send(trip);
     } catch (err) {
         res.status(400).json({ error: (err as Error).message });
     }

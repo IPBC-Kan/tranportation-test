@@ -6,6 +6,8 @@ import { IRegistration } from '../interfaces/Registration';
 // Registration Schema
 export const RegistrationSchema = new Schema({
     user: { type: UserSchema, required: true },
+    boardingStop: { type: String, required: true },
+    dropoffStop: { type: String, required: true },
     registrationDate: { type: Date, required: true },
     isCancelled: { type: Boolean, required: true },
     cancellationDate: { type: Date },

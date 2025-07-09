@@ -22,7 +22,9 @@ const TripChatMessageSchema = new Schema({
 // Trip Schema
 const TripSchema = new Schema({
     lineName: { type: String, required: true },
+    lineDirection: { type: String, enum: ['pickup', 'dropoff'], required: true },
     date: { type: Date, required: true },
+    isSpecial: { type: Boolean, required: true },
     chatMessages: { type: [TripChatMessageSchema], required: true },
     stops: { type: [TripStopSchema], required: true },
     registrations: { type: [RegistrationSchema], required: true }, // <-- תיקון כאן

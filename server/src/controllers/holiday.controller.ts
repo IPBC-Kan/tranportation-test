@@ -4,7 +4,7 @@ import * as holidayService from '../services/holidayService';
 export const getAllHolidays = async (req: Request, res: Response) => {
     try {
         const holidays = await holidayService.getAllHolidays();
-        res.json(holidays);
+        res.status(200).send(holidays);
     } catch (err) {
         res.status(500).json({ error: (err as Error).message });
     }
@@ -20,7 +20,7 @@ export const getHolidayByDate = async (req: Request, res: Response) => {
         if (!holiday) {
             return res.status(404).json({ error: 'Holiday not found' });
         }
-        res.json(holiday);
+        res.status(200).send(holiday);
     } catch (err) {
         res.status(500).json({ error: (err as Error).message });
     }

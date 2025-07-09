@@ -57,8 +57,8 @@ class TripService extends QuickApiServiceBase {
     public async getAllTripChatMessages(tripId: string) {
         return this.getOrThrow({ url: `/${tripId}/chatMessages` });
     }
-    public async createTripChatMessage(tripId: string, data: any) {
-        return this.postOrThrow({ url: `/${tripId}/chatMessages`, data });
+    public async createTripChatMessage(tripId: string, data: any): Promise<ITrip> {
+        return this.postOrThrow(data, { url: `/${tripId}/chatMessages` });
     }
 }
 

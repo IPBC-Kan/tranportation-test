@@ -37,7 +37,7 @@ export default class AuthController {
                 name: graphResponse.displayName || '',
                 email: graphResponse.mail || graphResponse.userPrincipalName || '',
                 phone: graphResponse.businessPhones[0] || '',
-                id: graphResponse.oid,
+                id: graphResponse.id,
             };
         } catch (err) {
             console.log(err);
@@ -53,6 +53,7 @@ export default class AuthController {
         });
         const id = req?.user?.id;
         // (graphData as GraphData).isAdmin = req.isAdmin || true;
+        console.log(`User ${id} signed in with Graph data:`, graphData);
 
         const user = {
             id: (graphData as GraphData).id,

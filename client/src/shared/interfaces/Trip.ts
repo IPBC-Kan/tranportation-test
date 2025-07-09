@@ -1,11 +1,14 @@
 // import { Document } from 'mongoose';
 import User from './User';
 import { IRegistration } from './Registration';
+import { LineDirection } from './Line';
 
 export interface ITrip {
     _id?: string; // Optional, for mongoose documents
     lineName: string;
+    lineDirection: LineDirection;
     date: Date;
+    isSpecial: boolean;
     chatMessages: ITripChatMessage[];
     stops: ITripStop[];
     registrations: IRegistration[];

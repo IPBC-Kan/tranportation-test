@@ -1,0 +1,112 @@
+.my-trips-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    gap: 18px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.registered-trips-container {
+    flex: 5 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    padding: 18px 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    overflow: auto;
+}
+
+.registered-trips-list-wrapper {
+    width: 100%;
+    /* This wrapper allows the grid to adapt to the container's width */
+    container-type: inline-size;
+    /* Remove flex so grid only takes needed space */
+    flex: none;
+    min-height: 0;
+}
+
+.registered-trips-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    width: 100%;
+    /* Remove flex and min-height so grid only takes the space it needs */
+    /* flex: 1 1 auto; */
+    /* min-height: 0; */
+}
+
+// Medium screens: 2 columns (unchanged, but kept for clarity)
+@media (max-width: 1050px) {
+    .registered-trips-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Small screens: 1 column
+@media (max-width: 650px) {
+    .registered-trips-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive: If container is less than 500px, use 1 column even on large screens */
+@container (max-width: 636px) {
+    .registered-trips-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.no-trips {
+    color: #888;
+    margin-top: 32px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.messages-container {
+    flex: 3 1 0;
+    min-width: 350px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 18px 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+// Hide messages-container if not enough space
+@media (max-width: 900px) {
+    .messages-container {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .registered-trips-container {
+        padding: 8px 2px;
+    }
+}
+
+.trips-messages-container {
+    flex: 1 1 33%;
+    min-height: 0;
+    background: #e0f7ef;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.system-messages-container {
+    flex: 2 1 67%;
+    min-height: 0;
+    background: #e0e0e0;
+    border-radius: 12px;
+}
