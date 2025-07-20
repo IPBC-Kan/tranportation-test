@@ -28,3 +28,28 @@
 //         border: 1px solid rgb(80, 187, 130);
 //     }
 // }
+
+// Mobile responsiveness for day labels
+.day-short-label {
+    display: none;
+}
+
+.day-full-label {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .day-short-label {
+        display: inline;
+    }
+
+    .day-full-label {
+        display: none;
+    }
+
+    .filter-tag {
+        min-width: 36px;
+        text-align: center;
+        padding: 8px 12px;
+    }
+}
