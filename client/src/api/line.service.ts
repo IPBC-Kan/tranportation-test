@@ -60,6 +60,11 @@ class LineService extends QuickApiServiceBase {
     public async deleteLineStop(lineId: string, stopId: string): Promise<void> {
         return this.deleteOrThrow({ url: `/${lineId}/stops/${stopId}` });
     }
+
+    // Get all schedules from all lines
+    public async getAllSchedules(): Promise<Array<ILineSchedule & { lineName: string; lineDirection: string }>> {
+        return this.getOrThrow({ url: '/schedules' });
+    }
 }
 
 export const lineService = new LineService();

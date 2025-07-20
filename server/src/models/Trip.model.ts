@@ -25,6 +25,8 @@ const TripSchema = new Schema({
     lineDirection: { type: String, enum: ['pickup', 'dropoff'], required: true },
     date: { type: Date, required: true },
     isSpecial: { type: Boolean, required: true },
+    cancellationTimestamp: { type: Date, required: true },
+    passengersNumberAllowed: { type: Number, required: true },
     chatMessages: { type: [TripChatMessageSchema], required: true },
     stops: { type: [TripStopSchema], required: true },
     registrations: { type: [RegistrationSchema], required: true }, // <-- תיקון כאן

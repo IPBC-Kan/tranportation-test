@@ -40,7 +40,9 @@ export const RegistrationPage: React.FC = () => {
         const dayKey = daysOfWeek[tripDate.getDay()].key;
         const lineMatch = !selectedLine || trip.lineName === selectedLine;
         const dayMatch = !selectedDay || dayKey === selectedDay;
-        return lineMatch && dayMatch;
+        const now = new Date();
+        const isActiveTrip = !trip.cancellationTimestamp || new Date(trip.cancellationTimestamp) > now;
+        return lineMatch && dayMatch && isActiveTrip;
     });
 
     // תצוגת תאריך

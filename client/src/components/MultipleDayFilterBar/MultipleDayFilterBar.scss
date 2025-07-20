@@ -1,0 +1,44 @@
+.multiple-day-filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    .filter-bar-label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .filter-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .filter-tag {
+            background: #e0e0e0;
+            color: rgb(80, 187, 130);
+            border-radius: 18px;
+            padding: 6px 16px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+            user-select: none;
+            border: 1px solid transparent;
+
+            &:hover {
+                background: rgb(80, 187, 130);
+                color: #fff;
+            }
+
+            &.selected {
+                background: rgb(80, 187, 130);
+                color: #fff;
+                border: 1px solid rgb(80, 187, 130);
+            }
+        }
+    }
+}

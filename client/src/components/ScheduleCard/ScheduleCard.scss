@@ -1,0 +1,94 @@
+.schedule-card {
+    min-width: 0;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    max-height: fit-content;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.schedule-line-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.schedule-line {
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    &.regular {
+        color: rgb(80, 187, 130);
+    }
+
+    &.special {
+        color: #ffd600;
+    }
+}
+
+.schedule-icon-special {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffe066;
+    color: #222;
+    font-weight: 900;
+    font-size: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    line-height: 1;
+    padding-top: 11.5px;
+}
+
+.schedule-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.schedule-time-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.schedule-time-text {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.schedule-direction {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.schedule-direction-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.schedule-direction-text {
+    font-size: 0.9rem;
+    color: #666;
+}

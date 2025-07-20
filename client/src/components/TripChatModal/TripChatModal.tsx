@@ -20,6 +20,7 @@ const TripChatModal: React.FC<TripChatModalProps> = ({ open, onClose, trip, curr
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState<ITripChatMessage[]>(trip.chatMessages || []);
     const [isLoading, setIsLoading] = useState(false);
+    const [showPassengerList, setShowPassengerList] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     // Scroll to bottom on open or new message
@@ -68,6 +69,40 @@ const TripChatModal: React.FC<TripChatModalProps> = ({ open, onClose, trip, curr
         }
     };
 
+    // Get unique passengers from registrations
+    const getPassengers = () => {
+        if (!trip.registrations) return [];
+
+        // Filter out cancelled registrations and extract unique users
+        return trip.registrations
+            .filter((reg) => !reg.isCancelled)
+            .map((reg) => reg.user)
+            .filter((user, index, self) => index === self.findIndex((u) => u.id === user.id));
+    };
+
+    const passengers = getPassengers();
+
+    // Toggle passenger dropdown
+    const togglePassengerList = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setShowPassengerList(!showPassengerList);
+    };
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            const target = event.target as HTMLElement;
+            if (!target.closest('.passenger-dropdown-container') && showPassengerList) {
+                setShowPassengerList(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [showPassengerList]);
+
     return (
         <Modal open={open} onClose={onClose}>
             <Box className="trip-chat-modal">
@@ -80,6 +115,27 @@ const TripChatModal: React.FC<TripChatModalProps> = ({ open, onClose, trip, curr
                 </div>
                 {/* Middle section: messages */}
                 <div className="trip-chat-messages-container">
+                    <div className="messages-header">
+                        <div className="passenger-dropdown-container">
+                            <button className="passenger-dropdown-button" onClick={togglePassengerList}>
+                                <span>נוסעים ({passengers.length})</span>
+                            </button>
+                            {showPassengerList && (
+                                <div className="passenger-dropdown-list">
+                                    {passengers.length > 0 ? (
+                                        <ul>
+                                            {passengers.map((passenger, index) => (
+                                                <li key={index}>{passenger.name || 'אנונימי'}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <div className="no-passengers">אין נוסעים רשומים</div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
                     {messages.length === 0 && <div className="no-messages">אין הודעות עדיין</div>}
                     {messages.map((msg, idx) => (
                         <div

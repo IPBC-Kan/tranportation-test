@@ -9,6 +9,8 @@ export interface ITrip {
     lineDirection: LineDirection;
     date: Date;
     isSpecial: boolean;
+    cancellationTimestamp: Date;
+    passengersNumberAllowed: number;
     chatMessages: ITripChatMessage[];
     stops: ITripStop[];
     registrations: IRegistration[];

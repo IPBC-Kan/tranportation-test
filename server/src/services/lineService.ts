@@ -97,3 +97,23 @@ export const deleteLineStop = async (lineId: string, stopId: string) => {
     await line.save();
     return line;
 };
+
+// Get all schedules from all lines
+export const getAllSchedules = async () => {
+    const lines = await Line.find({ isActive: true });
+    const allSchedules: Array<ILineSchedule & { lineName: string; lineDirection: string }> = [];
+
+    lines.forEach((line) => {
+        line.schedule.forEach((schedule) => {
+            if (schedule.isActive) {
+                allSchedules.push({
+                    ...schedule.toObject(),
+                    lineName: line.name,
+                    lineDirection: line.direction,
+                });
+            }
+        });
+    });
+
+    return allSchedules;
+};

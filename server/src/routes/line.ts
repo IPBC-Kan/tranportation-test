@@ -5,6 +5,7 @@ const router = Router();
 
 // LINE CRUD
 router.get('/', lineController.getAllLines);
+router.get('/schedules', lineController.getAllSchedules);
 router.post('/', lineController.createLine);
 router.put('/:lineId', lineController.updateLine);
 router.delete('/:lineId', lineController.deleteLine);

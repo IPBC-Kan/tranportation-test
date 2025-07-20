@@ -8,6 +8,8 @@ export interface ITrip extends Document {
     lineDirection: LineDirection;
     date: Date;
     isSpecial: boolean;
+    cancellationTimestamp: Date;
+    passengersNumberAllowed: number;
     chatMessages: ITripChatMessage[];
     stops: ITripStop[];
     registrations: IRegistration[];

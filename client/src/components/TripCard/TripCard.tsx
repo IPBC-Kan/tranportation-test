@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react';
-import { ITrip, ITripStop } from 'shared/interfaces';
+import { ITrip } from 'shared/interfaces';
 import './TripCard.scss';
 
 import User from 'shared/interfaces/User';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
     trip: ITrip;
@@ -12,6 +13,7 @@ interface Props {
 }
 
 const TripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, currentUser }) => {
+    const navigate = useNavigate();
     // בדוק אם המשתמש הנוכחי רשום לנסיעה זו
     const userRegistration = currentUser
         ? trip.registrations.find((reg) => reg.user?.id === currentUser.id && !reg.isCancelled)
@@ -47,7 +49,9 @@ const TripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, currentUser
                 // נסיעת איסוף רגילה - דרופדאון של תחנות
                 return (
                     <select className="trip-input" value={boarding} onChange={(e) => setBoarding(e.target.value)}>
-                        <option value="" disabled selected hidden>בחר תחנה</option>
+                        <option value="" disabled selected hidden>
+                            בחר תחנה
+                        </option>
                         {nonBaseStops.length > 0 ? (
                             nonBaseStops.map((stop) => (
                                 <option key={stop._id || stop.name} value={stop.name}>
@@ -88,7 +92,9 @@ const TripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, currentUser
                 // נסיעת פיזור רגילה - דרופדאון של תחנות
                 return (
                     <select className="trip-input" value={dropoff} onChange={(e) => setDropoff(e.target.value)}>
-                        <option value="" disabled selected hidden>בחר תחנה</option>
+                        <option value="" disabled selected hidden>
+                            בחר תחנה
+                        </option>
                         {nonBaseStops.length > 0 ? (
                             nonBaseStops.map((stop) => (
                                 <option key={stop._id || stop.name} value={stop.name}>
@@ -190,13 +196,18 @@ const TripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, currentUser
                                 borderRadius: '12px',
                                 padding: '8px 16px',
                                 fontWeight: 'bold',
-                                fontSize: '1rem',
+                                fontSize: '0.5rem',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
+                                cursor: 'pointer',
                             }}
+                            onClick={() => navigate('/my-trips')}
+                            tabIndex={0}
+                            role="button"
+                            aria-label="עבור לנסיעות שלי"
                         >
-                            נרשמת כבר לנסיעה זו
+                            הנך רשום כבר לנסיעה זו. לחץ כדי לעבור לנסיעות שלי{' '}
                         </div>
                     ) : (
                         <button className="register-btn" onClick={handleRegister}>

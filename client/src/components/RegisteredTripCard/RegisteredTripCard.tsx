@@ -5,6 +5,7 @@ import './RegisteredTripCard.scss';
 import User from 'shared/interfaces/User';
 import { registrationService } from 'api/registration.service';
 import TripChatModal from 'components/TripChatModal/TripChatModal';
+import { actions } from 'store/store';
 
 interface Props {
     trip: ITrip;
@@ -34,6 +35,11 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
     // Chat modal state
     const [chatOpen, setChatOpen] = useState(false);
 
+    // Check if cancellation timestamp is in the past
+    const cancellationTimestamp = trip.cancellationTimestamp ? new Date(trip.cancellationTimestamp) : null;
+    const now = new Date();
+    const canReregister = !!cancellationTimestamp && cancellationTimestamp > now;
+
     // Helper: update registration with new stops
     const updateRegistration = async (newBoarding: string, newDropoff: string) => {
         if (!userRegistration || !trip._id || !userRegistration._id) return;
@@ -53,10 +59,16 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
     // Cancel registration
     const handleCancel = async () => {
         if (!userRegistration || !trip._id || !userRegistration._id) return;
+        if (cancellationTimestamp && cancellationTimestamp < new Date()) {
+            const confirmed = window.confirm(
+                'שימו לב: מועד הביטול עבר. הביטול יבוצע אך ייחשב כביטול מאוחר, ולא תוכל להירשם שוב לנסיעה זו.'
+            );
+            if (!confirmed) return;
+        }
         try {
-            await registrationService.cancelRegistration(trip._id, userRegistration._id);
-            // Optionally: trigger a reload or state update in parent
-            window.location.reload(); // quick solution, replace with better state update if needed
+            const updatedRegistration = await registrationService.cancelRegistration(trip._id, userRegistration._id);
+            actions.trips.updateWhere(updatedRegistration, (t) => t._id === trip._id);
+            // window.location.reload(); // quick solution, replace with better state update if needed
         } catch (e) {
             alert('שגיאה בביטול נסיעה');
         }
@@ -201,7 +213,7 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
     const chatMessageCount = trip.chatMessages?.length || 0;
 
     return (
-        <div className={`registered-trip-card${isCancelled ? ' cancelled' : ''}`}>
+        <div className={`registered-trip-card${isCancelled ? ' cancelled' : ''}`} style={{ position: 'relative' }}>
             <div className="registered-trip-card-top-container">
                 <div className="registered-trip-details-container">
                     <div className="registered-trip-line-wrapper">
@@ -275,7 +287,7 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
                                     <div className="registered-trip-action-label chat">פתח צ'אט</div>
                                 </div>
                             </>
-                        ) : (
+                        ) : canReregister ? (
                             <div className="registered-trip-action">
                                 <button
                                     className="registered-trip-action-circle redo"
@@ -291,7 +303,7 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
                                     שחזר רישום
                                 </div>
                             </div>
-                        )}
+                        ) : null}
                     </div>
                 </div>
             </div>
@@ -311,10 +323,23 @@ const RegisteredTripCard: React.FC<Props> = ({ trip, getDateLabel, onRegister, c
                 </div>
             ) : (
                 <div className="cancelled-notification-container">
-                    ביטלת את רישומך לנסיעה זו. אם ברצונך לשחזר, לחץ על הכפתור למעלה
+                    {canReregister
+                        ? 'ביטלת את רישומך לנסיעה זו. אם ברצונך לשחזר, לחץ על הכפתור למעלה'
+                        : 'זמן ההרשמה לנסיעה זו עבר. לא ניתן להירשם שוב לנסיעה זו.'}
                 </div>
             )}
             <TripChatModal open={chatOpen} onClose={() => setChatOpen(false)} trip={trip} currentUser={currentUser} />
+            {/* Call Driver Button */}
+            {
+                <a
+                    // href={`tel:${trip.driver.phone}`}
+                    className="call-driver-btn"
+                    title="חייג לנהג"
+                >
+                    {/* <span className="call-driver-icon">📞</span> */}
+                    <span className="call-driver-label">חייג לנהג</span>
+                </a>
+            }
         </div>
     );
 };

@@ -64,12 +64,102 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative; // Added for positioning the dropdown
+
+    .messages-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 8px;
+    }
+
+    .passenger-dropdown-container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .passenger-dropdown-button {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        cursor: pointer;
+        color: #666;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #e4e4e4;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .passenger-dropdown-list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 180px;
+        max-height: 150px;
+        overflow-y: auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 4px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        z-index: 20;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 6px 10px;
+            font-size: 0.9rem;
+            color: #333;
+            text-align: right;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+
+        .no-passengers {
+            padding: 8px 10px;
+            color: #888;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+    }
 
     .no-messages {
         color: #888;
         text-align: center;
         margin-top: 30px;
         font-size: 0.95rem;
+    }
+}
+
+// Add scrollbar styling for passenger list
+.passenger-dropdown-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.passenger-dropdown-list::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 3px;
+}
+
+.passenger-dropdown-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+
+    &:hover {
+        background: #bbb;
     }
 }
 

@@ -4,7 +4,10 @@ import { Types } from 'mongoose';
 
 // TRIP CRUD
 export const getAllTrips = async () => {
-    return Trip.find();
+    const threeHoursAgo = new Date();
+    threeHoursAgo.setHours(threeHoursAgo.getHours() - 3); // Correctly subtract 3 hours from the current time
+    console.log(threeHoursAgo);
+    return Trip.find({ date: { $gte: threeHoursAgo } }).sort({ date: 1 }); // Sort by date in ascending order
 };
 
 export const getTripById = async (tripId: string) => {
@@ -12,7 +15,7 @@ export const getTripById = async (tripId: string) => {
 };
 
 export const getTripsByDayOfWeek = async (weekday: string) => {
-    return Trip.find({ 'line.schedule.weekday': weekday });
+    return Trip.find({ 'line.schedule.weekday': weekday }).sort({ date: 1 }); // Sort by date in ascending order
 };
 
 export const getTodayTrips = async () => {
@@ -20,11 +23,11 @@ export const getTodayTrips = async () => {
     today.setHours(0, 0, 0, 0);
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
-    return Trip.find({ date: { $gte: today, $lt: tomorrow } });
+    return Trip.find({ date: { $gte: today, $lt: tomorrow } }).sort({ date: 1 }); // Sort by date in ascending order
 };
 
 export const getTripsBetweenDates = async (start: Date, end: Date) => {
-    return Trip.find({ date: { $gte: start, $lte: end } });
+    return Trip.find({ date: { $gte: start, $lte: end } }).sort({ date: 1 }); // Sort by date in ascending order
 };
 
 export const createTrip = async (tripData: ITrip) => {

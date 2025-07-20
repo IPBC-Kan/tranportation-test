@@ -83,3 +83,9 @@ export const deleteLineStop = async (req: Request, res: Response) => {
     const line = await lineService.deleteLineStop(req.params.lineId, req.params.stopId);
     res.status(200).send(line);
 };
+
+// Get all schedules from all lines
+export const getAllSchedules = async (req: Request, res: Response) => {
+    const schedules = await lineService.getAllSchedules();
+    res.status(200).send(schedules);
+};

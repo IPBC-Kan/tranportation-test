@@ -1,0 +1,118 @@
+.info-page {
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    flex: 1 1 auto;
+}
+
+.filters-container {
+    max-height: 430px;
+    margin-bottom: 10px;
+}
+
+.schedules-container {
+    padding: 12px;
+    background-color: #b2a7a7;
+    border-radius: 20px;
+    min-height: 0;
+    height: 100%;
+    flex: 1 1 auto;
+    overflow: auto;
+
+    /* Custom scrollbar styling */
+    &::-webkit-scrollbar {
+        width: 10px;
+        background: #e0e0e0;
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(80, 187, 130);
+        border-radius: 8px;
+        min-height: 40px;
+        transition: background 0.2s;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(20, 165, 88);
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(80, 187, 130) #e0e0e0;
+}
+
+.day-section {
+    margin-bottom: 20px;
+
+    .day-header {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 12px;
+        padding: 8px 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .schedules-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+    }
+}
+
+.no-schedules {
+    color: #888;
+    margin-top: 32px;
+    font-size: 1.1rem;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    color: #666;
+}
+
+// Large screens: 5 cards in a row
+@media (max-width: 1400px) {
+    .day-section .schedules-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// Medium screens: 4 cards in a row
+@media (max-width: 1100px) {
+    .day-section .schedules-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// Medium-small screens: 3 cards in a row
+@media (max-width: 900px) {
+    .day-section .schedules-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Small screens: 2 cards in a row
+@media (max-width: 600px) {
+    .day-section .schedules-list {
+        grid-template-columns: 1fr;
+    }
+}

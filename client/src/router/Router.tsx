@@ -17,6 +17,7 @@ import { applicationRoutes } from './Routes';
 import { useAppInitialization } from 'hooks/useAppInitialization.hook';
 import RegistrationPage from 'pages/RegistrationPage/RegistrationPage';
 import MyTripsPage from 'pages/MyTripsPage/MyTripsPage';
+import InfoPage from 'pages/InfoPage/InfoPage';
 
 const importModule = (moduleName: string) => lazy(() => import(`pages/${moduleName}`));
 
@@ -65,6 +66,7 @@ export const AppRouter = () => {
 
                         <Route path="/registration" element={<RegistrationPage />} />
                         <Route path="/my-trips" element={<MyTripsPage />} />
+                        <Route path="/info" element={<InfoPage />} />
                     </Route>
                 </Routes>
             </Suspense>
