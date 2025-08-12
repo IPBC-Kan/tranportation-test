@@ -33,6 +33,28 @@
     display: block;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+
+.management-btn {
+    background: rgb(80, 187, 130);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+        background: rgb(70, 167, 120);
+    }
+}
+
 .userInfo {
     display: flex;
     align-items: center;

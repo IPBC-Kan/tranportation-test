@@ -4,7 +4,13 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { actions } from 'store/store';
 
 const navItems = [
-    { key: 'register', label: 'הרשמה לנסיעה', route: '/registration', focusedImg: '/register-to-trip.png', img: '/register-to-trip-press.png' },
+    {
+        key: 'register',
+        label: 'הרשמה לנסיעה',
+        route: '/registration',
+        focusedImg: '/register-to-trip.png',
+        img: '/register-to-trip-press.png',
+    },
     { key: 'myTrips', label: 'הנסיעות שלי', route: '/my-trips', focusedImg: '/my-trips.png', img: '/my-trips-press.png' },
     { key: 'info', label: 'מידע על נסיעה', route: '/info', focusedImg: '/trips-info.png', img: '/trips-info-press.png' },
     { key: 'help', label: 'עזרה', route: '/help', focusedImg: '/contact-us.png', img: '/contact-us-press.png' },
@@ -19,12 +25,12 @@ export const NavBar: React.FC = () => {
 
     // קובע את הכפתור הפעיל לפי ה-URL
     const [activeKey, setActiveKey] = useState<string>(() => {
-        const found = navItems.find(item => location.pathname.startsWith(item.route));
+        const found = navItems.find((item) => location.pathname.startsWith(item.route));
         return found ? found.key : navItems[0].key;
     });
 
     useEffect(() => {
-        const found = navItems.find(item => location.pathname.startsWith(item.route));
+        const found = navItems.find((item) => location.pathname.startsWith(item.route));
         setActiveKey(found ? found.key : navItems[0].key);
     }, [location.pathname]);
 
@@ -41,9 +47,7 @@ export const NavBar: React.FC = () => {
             {items.map((item) => (
                 <div className="navItem" key={item.key}>
                     <div
-                        className={
-                            `circle${hovered === item.key ? ' hovered' : ''}${activeKey === item.key ? ' active' : ''}`
-                        }
+                        className={`circle${hovered === item.key ? ' hovered' : ''}${activeKey === item.key ? ' active' : ''}`}
                         onMouseEnter={() => setHovered(item.key)}
                         onMouseLeave={() => setHovered(null)}
                         onClick={() => {
@@ -51,12 +55,16 @@ export const NavBar: React.FC = () => {
                             navigate(item.route);
                         }}
                     >
-                        <img src={hovered === item.key || activeKey === item.key ? item.focusedImg : item.img} alt={item.label} className="circleImg" />
+                        <img
+                            src={hovered === item.key || activeKey === item.key ? item.focusedImg : item.img}
+                            alt={item.label}
+                            className="circleImg"
+                        />
                     </div>
                     <div className={`label${activeKey === item.key ? ' active' : ''}`}>{item.label}</div>
                 </div>
             ))}
-            <div className="navItem" key="management">
+            {/* <div className="navItem" key="management">
                 <div
                     className={`management-circle${hovered === 'management' ? ' hovered' : ''}`}
                     onMouseEnter={() => setHovered('management')}
@@ -72,7 +80,7 @@ export const NavBar: React.FC = () => {
                     />
                 </div>
                 <div className="label">ניהול</div>
-            </div>
+            </div> */}
         </nav>
     );
 };

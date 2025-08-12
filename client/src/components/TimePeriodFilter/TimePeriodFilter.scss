@@ -1,0 +1,44 @@
+.time-period-filter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-bar-label {
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+}
+
+.period-dropdown {
+    padding: 8px 16px;
+    border: 1px solid rgb(80, 187, 130);
+    border-radius: 18px;
+    background: #fff;
+    color: rgb(80, 187, 130);
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s, color 0.2s;
+    min-width: 180px;
+
+    &:hover {
+        background: rgb(80, 187, 130);
+        color: #fff;
+    }
+
+    &:focus {
+        background: rgb(80, 187, 130);
+        color: #fff;
+        box-shadow: 0 0 0 2px rgba(80, 187, 130, 0.3);
+    }
+
+    option {
+        background: #fff;
+        color: #333;
+        padding: 8px;
+    }
+}
